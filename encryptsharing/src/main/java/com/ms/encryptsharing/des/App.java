@@ -12,6 +12,12 @@ import javax.crypto.spec.DESKeySpec;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
+/**
+ * DES 数据加密标准算法
+ * 
+ * @author Administrator
+ *
+ */
 public class App {
 	private final static String DES = "DES";
 	private static Scanner scanner = new Scanner(System.in);

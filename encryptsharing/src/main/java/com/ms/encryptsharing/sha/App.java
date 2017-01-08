@@ -6,7 +6,7 @@ import java.util.Base64;
 import java.util.Scanner;
 
 /**
- * SHA
+ * SHA 信息摘要算法
  * 
  * @author Administrator
  *

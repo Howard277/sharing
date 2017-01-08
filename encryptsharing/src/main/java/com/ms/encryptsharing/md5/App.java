@@ -6,7 +6,7 @@ import java.util.Base64;
 import java.util.Scanner;
 
 /**
- * MD5
+ * MD5 信息摘要算法
  * 
  * @author Administrator
  *
