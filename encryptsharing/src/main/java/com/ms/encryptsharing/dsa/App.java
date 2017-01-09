@@ -14,14 +14,13 @@ public class App {
 	public static void main(String[] args) throws Exception {
 		// //生成秘钥文件。只需生成一次。
 		// DSAGenerator.generate();
-		while (true) {
-			System.out.println("input:");
-			String data = scanner.nextLine();
-			byte[] sign = DSAUtils.sign(data.getBytes());
+		String content = null;
+		while ((content = scanner.nextLine()) != null) {
+			System.out.println("原文:" + content);
+			byte[] sign = DSAUtils.sign(content.getBytes());
 			System.out.println("数字签名：" + sign);
-			System.out.println("验证签名：" + DSAUtils.verify(data.getBytes(), sign));
+			System.out.println("验证签名：" + DSAUtils.verify(content.getBytes(), sign));
 			System.out.println("--------------");
-			String str = scanner.nextLine();
 		}
 	}
 }

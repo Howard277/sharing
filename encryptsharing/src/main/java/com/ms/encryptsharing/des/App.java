@@ -24,14 +24,13 @@ public class App {
 
 	public static void main(String[] args) throws Exception {
 		String key = "wuketao$12345678";
-		while (true) {
-			System.out.println("input:");
-			String data = scanner.nextLine();
-			String encryptStr = encrypt(data, key);
+		String content = null;
+		while ((content = scanner.nextLine()) != null) {
+			System.out.println("原文:" + content);
+			String encryptStr = encrypt(content, key);
 			System.out.println("加密结果：" + encryptStr);
 			System.out.println("解密结果：" + decrypt(encryptStr, key));
 			System.out.println("--------------");
-			String str = scanner.nextLine();
 		}
 
 	}
