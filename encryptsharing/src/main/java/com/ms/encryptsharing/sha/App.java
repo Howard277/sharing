@@ -24,9 +24,9 @@ public class App {
 	}
 
 	private static String printSHA(String txt) throws NoSuchAlgorithmException {
-		MessageDigest md5 = MessageDigest.getInstance("SHA1");
-		md5.update(txt.getBytes());
-		byte[] bs = md5.digest();
+		MessageDigest sha1 = MessageDigest.getInstance("SHA1");
+		sha1.update(txt.getBytes());
+		byte[] bs = sha1.digest();
 		return new String(Base64.getEncoder().encode(bs));
 
 	}
